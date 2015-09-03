@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.myarcmenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+  <com.example.myarcmenu.MyArcMenu 
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      app:position="left_top"
+      app:radius="100dp"
+      >
+      <RelativeLayout 
+               android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"  
+                android:background="@drawable/composer_button"
+          >
+        <ImageView  
+                android:id="@+id/id_button"  
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"  
+                android:layout_centerInParent="true"  
+                android:src="@drawable/composer_icn_plus" />  
+     </RelativeLayout>
+     
+       <ImageView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_centerInParent="true"  
+            android:src="@drawable/composer_camera"  
+            android:tag="Camera" />  
+  
+        <ImageView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_centerInParent="true"  
+            android:src="@drawable/composer_sun"  
+            android:tag="Sun" />  
+  
+        <ImageView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_centerInParent="true"  
+            android:src="@drawable/composer_place"  
+            android:tag="Place" />  
+          
+        <ImageView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_centerInParent="true"  
+            android:src="@drawable/composer_sleep"  
+            android:tag="Sleep" />  
+  </com.example.myarcmenu.MyArcMenu>    
+
+</RelativeLayout>
